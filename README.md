@@ -12,8 +12,8 @@ If fails run:
 $ sudo apt install -f
 $ sudo dpkg -i viber_ubuntu.deb
 ```
-You can also do it manually using "Manual Installing" section.
-## Manual Installing
+You can also do it manually using "Manual Installation" section.
+## Manual Installation
 
 To fix Viber on Ubuntu 18.04 and Ubuntu 18.04 based distros you should:
 
