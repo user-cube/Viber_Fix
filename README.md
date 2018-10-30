@@ -1,5 +1,17 @@
 # Viber_Fix
-Fix Viber on Ubuntu 18.04 and based distros
+Fix Viber on Ubuntu 18.04 and Ubuntu 18.04 based distros
+
+## Installing
+
+You can install Viber using:
+```
+$ sudo dpkg -i viber_ubuntu.deb
+```
+If fails run:
+```
+$ sudo apt install -f
+$ sudo dpkg -i viber_ubuntu.deb
+```
 
 ## How to fix it
 
@@ -9,8 +21,8 @@ To fix Viber on Ubuntu and base distros you should:
 2. Run:
 
 ```
-$ dpkg-deb -x viber.deb viber
-$ dpkg-deb --control viber.deb viber/DEBIAN
+$ sudo dpkg-deb -x viber.deb viber
+$ sudo dpkg-deb --control viber.deb viber/DEBIAN
 ```
 Then edit viber/DEBIAN/control and replace the content for:
 ```
@@ -29,7 +41,7 @@ Description: Free Text & Calls.
 ```
 After that run:
 ```
-$ dpkg -b viber vibernew.deb
+$ sudo dpkg -b viber vibernew.deb
 $ sudo dpkg -i vibernew.deb
 ```
 By now Viber should be working.
